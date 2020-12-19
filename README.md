@@ -15,4 +15,9 @@ Python
 ![Database Schema ](https://github.com/abrarwali/MySQL-Art-Gallery-System/blob/master/Schema/schema1.png)
 ![Django Schema](https://github.com/abrarwali/MySQL-Art-Gallery-System/blob/master/Schema/schema2.png)
 
+# Screenshots
+![Screenshots](https://github.com/abrarwali/MySQL-Art-Gallery-System/blob/master/index.png)
+
+
+
     
