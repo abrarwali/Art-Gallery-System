@@ -12,6 +12,7 @@ Django
 Python
 
 # Schema
-![JK Suicides vs Murders ](https://github.com/abrarwali/Analysis-of-Suicide-and-Murder-Rates-in-J-K/blob/master/Jk_Murders_Suicides.png)
+![Database Schema ](https://github.com/abrarwali/MySQL-Art-Gallery-System/blob/master/Schema/schema1.png)
+![Django Schema](https://github.com/abrarwali/MySQL-Art-Gallery-System/blob/master/Schema/schema2.png)
 
     
