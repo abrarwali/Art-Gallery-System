@@ -12,6 +12,6 @@ Django
 Python
 
 # Schema
-(https://github.com/abrarwali/Analysis-of-Suicide-and-Murder-Rates-in-J-K/blob/master/Jk_Murders_Suicides.png)
+![JK Suicides vs Murders ](https://github.com/abrarwali/Analysis-of-Suicide-and-Murder-Rates-in-J-K/blob/master/Jk_Murders_Suicides.png)
 
     
