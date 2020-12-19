@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+    {% block head %}
+    {% block title %} Add Customer {% endblock %}
+    {% endblock head %}
+
+    {% block content %}
+
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4" style="font-family: 'Permanent Marker', cursive;">Add Customer</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Add</button>
+            </div>
+        </form>
+
+    {% endblock content%}
+

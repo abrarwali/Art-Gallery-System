@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block title %} Artist {% endblock %}
+
+    {% block head %}
+
+    {% endblock head %}
+
+    {% block content %}
+    <div class="container">
+    <h4 style="font-family: 'Permanent Marker', cursive;" class="mt-3"> REGISTERED CUSTOMERS</h4>
+        {% if request.user.is_authenticated %}
+        <a style="background-color: #F8F9FA; border-color: black" href="{% url 'url-addCustomer' %}" class="btn  mt-3 mb-2 mr-3" > Add Customer <i class="fas fa-plus"></i></a></h5>
+
+        {% endif %}
+
+        {% for c in Customers %}
+            <ul style="list-style: none" class="list-group mt-1">
+                <li class="list-group-item">
+                   <a class="text-dark" href="{% url 'url-CustomerList' %}"> {{ c.First_Name }} {{ c.Last_Name }} </a>
+
+                </li>
+            </ul>
+        {% endfor %}
+        </div>
+    {% endblock content%}

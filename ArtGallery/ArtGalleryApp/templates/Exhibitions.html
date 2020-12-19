@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block title %} Artist {% endblock %}
+
+    {% block head %}
+
+    {% endblock head %}
+
+    {% block content %}
+    <div class="container">
+    <h4 style="font-family: 'Permanent Marker', cursive;" class="mt-3"> EXHIBITIONS</h4>
+                {% if request.user.is_authenticated %}
+     <a style="background-color: #F8F9FA; border-color: black" href="{% url 'url-addExhibition' %}" class="btn  mb-2 mr-3" > Add Exhibition <i class="fas fa-plus"></i></a></h5>                {% endif %}
+        {% for e in Exhibitions %}
+            <ul class="list-group">
+                <li class="list-group-item mt-1 ">
+                   <a class="text-dark"" href="{% url 'url-Exhibitions' %}"> {{ e.Exhibition_Name }} </a>
+                   <p> {{ e.Start_Date }} to {{ e.End_Date }} </p>
+                   <p>AT : {{ e.Venue }} </p>
+
+                </li>
+            </ul>
+        {% endfor %}
+        </div>
+    {% endblock content%}
